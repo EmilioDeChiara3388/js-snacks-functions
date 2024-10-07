@@ -11,8 +11,8 @@ function initialNameArray (){
     }
     return firstLetter;
 }
-
-console.log(initialNameArray());
+let newArray = names.map(initialNameArray());
+console.log(newArray);
 
 
 // Invoca la funzione qui e stampa il risultato in console
