@@ -10,7 +10,7 @@ function initialNameArray (names){
     for (let i = 0; i < names.length; i++){
         const firstLetter = names[i][0];
         console.log(firstLetter);
-        let newArray2 = newArray.push(firstLetter);
+        let newArray = names.push(firstLetter);
     }
 
     return newArray;
