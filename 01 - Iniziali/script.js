@@ -6,10 +6,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui.
 
 function initialNameArray (names){
+    newArray = [];
     for (let i = 0; i < names.length; i++){
         const firstLetter = names[i][0];
         console.log(firstLetter);
     }
+
+    return newArray;
 
 }
 
@@ -19,10 +22,6 @@ console.log(initialNameArray(names));
 
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
-const newArray = names.push(initialNameArray(names));
-console.log(newArray);
 
 
 
