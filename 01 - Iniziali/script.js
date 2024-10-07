@@ -4,6 +4,15 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function initialNameArray (){
+    for (let i = 0; i <= names.length; i++){
+        let firstLetter = names[i][0];
+        console.log(firstLetter);
+    }
+    return firstLetter;
+}
+
+console.log(initialNameArray());
 
 
 // Invoca la funzione qui e stampa il risultato in console
