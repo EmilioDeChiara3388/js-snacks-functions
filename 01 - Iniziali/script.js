@@ -5,17 +5,22 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 function initialNameArray (){
-    for (let i = 0; i <= names.length; i++){
-        let firstLetter = names[i][0];
+    for (let i = 0; i < names.length; i++){
+        const firstLetter = names[i][0];
         console.log(firstLetter);
     }
     return firstLetter;
 }
-let newArray = names.map(initialNameArray());
-console.log(newArray);
+
+console.log(initialNameArray(names));
+
+//const newArray = []
+//console.log(newArray);
 
 
 // Invoca la funzione qui e stampa il risultato in console
+const newArray = names.unshift(firstLetter);
+console.log(newArray);
 
 
 
