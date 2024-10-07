@@ -4,28 +4,25 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-//
-    let initial;
-    for (i = 0; i < names.length; i++){
-        let initial = names[i][0];
+function initialNameArray (names){
+    newArray = [];
+    for (let i = 0; i < names.length; i++){
+        const firstLetter = names[i][0];
+        const okName = names [i];
+        console.log(firstLetter);
+        if (firstLetter === "A")
+        newArray.push(okName);
     }
-    
-    if (initial === "A"){
-        
-    }
-        
-    
-    console.log(initial);
 
+    return newArray;
 
-
-console.log(initial);
+}
 
 
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(initialNameArray(names));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
