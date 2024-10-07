@@ -10,20 +10,15 @@ function initialNameArray (names){
     for (let i = 0; i < names.length; i++){
         const firstLetter = names[i][0];
         console.log(firstLetter);
-        let newArray = names.push(firstLetter);
+        newArray.push(firstLetter);
     }
 
     return newArray;
 
 }
 
-console.log(initialNameArray(names));
-
-
-
-
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(initialNameArray(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
