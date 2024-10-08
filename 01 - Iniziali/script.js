@@ -5,10 +5,10 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-function initialNameArray (names){
+function initialNameArray (array){
     newArray = [];
-    for (let i = 0; i < names.length; i++){
-        const firstLetter = names[i][0];
+    for (let i = 0; i < array.length; i++){
+        const firstLetter = array[i][0];
         console.log(firstLetter);
         newArray.push(firstLetter);
     }

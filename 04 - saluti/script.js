@@ -4,15 +4,15 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-function yourName(word){
-    let greetings = `${"Ciao"} ${word}`;
+function yourName(string){
+    let greetings = `${"Ciao"} ${string}`;
     return greetings;
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(yourName("Mario"));
+console.log(yourName(name));
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario

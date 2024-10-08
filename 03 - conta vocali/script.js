@@ -4,16 +4,16 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-function countVowels (word){
-    count = [];
-    for (let i = 0; i < word.length; i++){
-        const letters = word[i][0];
+function countVowels (string){
+    let count = [];
+    for (let i = 0; i < string.length; i++){
+        const letters = string[i];
         console.log(letters);
         if (letters === "a" || letters === "e" || letters === "i" || letters === "o" || letters === "u")
         count.push(letters);
     }
 
-    return count;
+    return count.length;
     
 }
 
